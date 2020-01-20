@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid >
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <TextBlock x:Name="Number"
+                   Text="0"
+                   Width="150"
+                   Margin="319,-83,331,152"
+                   FontSize="300" />
         <Button Content="Tryk her for at øge tallet med 1"
-            Width="350"
-            Height="147"
-            FontSize="24"
-            Margin="225,277,225,10" />
+                Width="350"
+                Height="147"
+                FontSize="24"
+                Margin="225,287,225,0" />
     </Grid>
 </Window>
