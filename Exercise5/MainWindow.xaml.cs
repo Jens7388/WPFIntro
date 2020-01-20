@@ -24,6 +24,7 @@ namespace Exercise5
         int boxPositionTop;
         int boxPositionRight;
         int boxPositionBottom;
+        int counter;
         Random positionGenerator = new Random();
         public MainWindow()
         {
@@ -32,11 +33,14 @@ namespace Exercise5
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {        
-            boxPositionLeft = positionGenerator.Next(10, 790);
-            boxPositionTop = positionGenerator.Next(10, 790);
-            boxPositionRight = positionGenerator.Next(10, 790 - boxPositionLeft);
-            boxPositionBottom = positionGenerator.Next(10, 790 - boxPositionTop);
+            boxPositionLeft = positionGenerator.Next(0, 800);
+            boxPositionTop = positionGenerator.Next(0, 800);
+            boxPositionRight = positionGenerator.Next(0, 800 - boxPositionLeft);
+            boxPositionBottom = positionGenerator.Next(0, 800 - boxPositionTop);
             clickMe.Margin = new Thickness(boxPositionLeft, boxPositionTop, boxPositionRight, boxPositionBottom);
+
+            counter++;
+            score.Text = counter.ToString();
         }
     }
 }
