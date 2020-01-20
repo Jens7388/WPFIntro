@@ -20,9 +20,17 @@ namespace Exercise3
     /// </summary>
     public partial class MainWindow: Window
     {
+        int nextNumber;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            nextNumber++;
+            number.Text = nextNumber.ToString();
         }
     }
 }
