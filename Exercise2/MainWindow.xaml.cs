@@ -24,5 +24,10 @@ namespace Exercise2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            button.Background = Brushes.Green;
+        }
     }
 }
