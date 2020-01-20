@@ -5,21 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800">
     <Grid>
-        <Button 
-            Content="↑"
-            Width="150"
-            Height="75"
-            Margin="325,217,325,142"
-            FontSize="50" 
-        />
-        <Button 
-            Content="↓"
-            Width="150"
-            Height="75"
-            Margin="325,317,325,42"
-            FontSize="50" 
-        />
+        <TextBlock x:Name="currentValue"
+                   Text="0"
+                   Margin="80,73,620,261"
+                   Width="100"
+                   Height="100"
+                   TextAlignment="Center"
+                   FontSize="70" />
+        <TextBlock x:Name="totalClicks"
+                   Text="0"
+                   Width="100"
+                   Height="100"
+                   Margin="620,68,80,266"
+                   TextAlignment="Center"
+                   FontSize="75"
+                   RenderTransformOrigin="0.26,0.625" />
+        <Button Content="↑"
+                Width="150"
+                Height="75"
+                Margin="325,217,325,142"
+                FontSize="50" />
+        <Button Content="↓"
+                Width="150"
+                Height="75"
+                Margin="325,317,325,42"
+                FontSize="50" />
+        <TextBlock Margin="603,158,10,15"
+                   Text="Tryk i alt"
+                   FontSize="36" />
+        <TextBlock Margin="0,158,480,10"
+                   Text="Nuværende værdi"
+                   FontSize="36" />
     </Grid>
 </Window>
