@@ -20,9 +20,29 @@ namespace Exercise4
     /// </summary>
     public partial class MainWindow: Window
     {
+        int counter;
+        int totalClicksCounter;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        //Upwards arrow button
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            totalClicksCounter++;
+            totalClicks.Text = totalClicksCounter.ToString();
+            counter++;
+            currentValue.Text = counter.ToString();
+        }
+
+        //Downwards arrow button
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            totalClicksCounter++;
+            totalClicks.Text = totalClicksCounter.ToString();
+            counter--;
+            currentValue.Text = counter.ToString();
         }
     }
 }
