@@ -25,6 +25,7 @@ namespace Exercise5
         int boxPositionRight;
         int boxPositionBottom;
         int counter;
+        int countDown = 60;
         Random positionGenerator = new Random();
         public MainWindow()
         {
@@ -32,7 +33,7 @@ namespace Exercise5
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {        
+        {
             boxPositionLeft = positionGenerator.Next(0, 800);
             boxPositionTop = positionGenerator.Next(0, 800);
             boxPositionRight = positionGenerator.Next(0, 800 - boxPositionLeft);
