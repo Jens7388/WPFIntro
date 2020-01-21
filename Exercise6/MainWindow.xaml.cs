@@ -27,8 +27,15 @@ namespace Exercise6
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-         //   string name = textBoxInput.Text;
-            
+            string name = textBoxInput.Text;
+            if(name == "")
+            {
+                textBlockOutput.Text = "Du mangler at skrive dit navn!";
+            }
+            else
+            {
+                textBlockOutput.Text = $"Hej {name} og velkommen til programmet!";
+            }
         }
     }
 }

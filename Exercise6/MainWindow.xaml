@@ -10,19 +10,21 @@
         Width="800">
     <Grid>
         <TextBox x:Name="textBoxInput"
-                 Margin="281,153,418,227" />
-        <TextBlock Margin="281,204,367,180"
-                   Text="Skriv dit navn her:" />
+                 Margin="262,153,262,227" />
+        <TextBlock Margin="324,130,324,254"
+                   Text="Skriv dit navn her:"
+                   FontSize="16"/>
         <Button Content="Send"
-                HorizontalAlignment="Left"
-                Margin="286,254,0,0"
+                HorizontalAlignment="Center"
+                Margin="0,217,0,0"
                 VerticalAlignment="Top"
                 Height="20"
                 Width="96"
-                Click="Button_Click" />
-        <TextBlock x:Name="outputField"
+                Click="Button_Click"
+                RenderTransformOrigin="0.988,0.188" />
+        <TextBlock x:Name="textBlockOutput"
                    Margin="10,10,10,281"
-                   FontSize="36"
+                   FontSize="24"
                    TextAlignment="Center" />
     </Grid>
 </Window>
