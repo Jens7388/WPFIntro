@@ -24,5 +24,11 @@ namespace Exercise6
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+         //   string name = textBoxInput.Text;
+            
+        }
     }
 }

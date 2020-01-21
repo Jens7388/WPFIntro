@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise6"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800">
     <Grid>
-
+        <TextBox x:Name="textBoxInput"
+                 Margin="281,153,418,227" />
+        <TextBlock Margin="281,204,367,180"
+                   Text="Skriv dit navn her:" />
+        <Button Content="Send"
+                HorizontalAlignment="Left"
+                Margin="286,254,0,0"
+                VerticalAlignment="Top"
+                Height="20"
+                Width="96"
+                Click="Button_Click" />
+        <TextBlock x:Name="outputField"
+                   Margin="10,10,10,281"
+                   FontSize="36"
+                   TextAlignment="Center" />
     </Grid>
 </Window>
