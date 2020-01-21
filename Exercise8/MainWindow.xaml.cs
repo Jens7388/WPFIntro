@@ -24,5 +24,9 @@ namespace Exercise8
         {
             InitializeComponent();
         }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textBlockOutput.Text = textBoxInput.Text;
+        }
     }
 }

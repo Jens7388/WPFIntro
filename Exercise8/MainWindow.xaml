@@ -9,14 +9,17 @@
         Height="450"
         Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left"
-                 Margin="375,278,0,0"
+        <TextBox x:Name="textBoxInput"
+                 HorizontalAlignment="Center"                
+                 Margin="0,296,0,0"
                  Text=""
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
-                 Width="120" />
-        <TextBlock HorizontalAlignment="Left"
-                   Margin="312,217,0,0"
+                 Width="120"
+                 TextChanged="TextBox_TextChanged" />
+        <TextBlock HorizontalAlignment="Center"
+                   x:Name="textBlockOutput"
+                   Margin="0,217,0,0"
                    Text="Hvad end du skriver i feltet under bliver gentaget her"
                    TextWrapping="Wrap"
                    VerticalAlignment="Top" />
