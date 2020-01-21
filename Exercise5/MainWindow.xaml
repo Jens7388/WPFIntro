@@ -31,5 +31,14 @@
                 Height="50"
                 Margin="375,367,375,367"
                 Click="Button_Click" />
+        <Button x:Name="exitButton"
+                Content="Afslut"
+                FontSize="25"
+                HorizontalAlignment="Left"
+                Margin="0,728,0,0"
+                VerticalAlignment="Top"
+                Height="56"
+                Width="76"
+                Click="exitButton_Click" />
     </Grid>
 </Window>
