@@ -1,0 +1,36 @@
+﻿<Window x:Class="Exercise7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise7"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <TextBox x:Name="textBoxFirstName"
+                 Margin="284,200,417,190" />
+        <Button Content="Send"
+                HorizontalAlignment="Center"
+                Margin="0,294,0,0"
+                VerticalAlignment="Top"
+                Height="20"
+                Width="96"
+                RenderTransformOrigin="0.988,0.188"
+                Click="Button_Click" />
+        <TextBlock x:Name="textBlockOutput"
+                   Margin="10,10,10,281"
+                   FontSize="24"
+                   TextAlignment="Center" />
+        <TextBox x:Name="textBoxLastName"
+                 Margin="415,200,286,190" />
+        <TextBlock Margin="248,172,400,212"
+                   Text="Skriv dit fornavn her:"
+                   FontSize="14" />
+        <TextBlock Margin="388,172,260,212"
+                   Text="Skriv dit efternavn her:"
+                   FontSize="14" />
+
+    </Grid>
+</Window>
