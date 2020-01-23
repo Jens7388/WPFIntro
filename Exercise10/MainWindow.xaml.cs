@@ -24,5 +24,21 @@ namespace Exercise10
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string userName = userNameInput.Text;
+            string passWord = passWordInput.Password;
+
+            bool allowedUsers = (userName == "Ole" && passWord == "MinHunErSød") || (userName == "Brian" && passWord == "Lastbil2006$Rød");
+            if(allowedUsers)
+            {
+                MessageBox.Show($"Velkommen, {userName}");
+            }
+            else
+            {
+                MessageBox.Show("Ugyldigt brugernavn eller adgangskode! Prøv igen");
+            }
+        }
     }
 }

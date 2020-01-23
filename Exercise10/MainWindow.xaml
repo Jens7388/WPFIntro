@@ -44,6 +44,7 @@
                 Canvas.Left="363"
                 Canvas.Top="270"
                 Height="26"
-                Width="111" />
+                Width="111"
+                Click="Button_Click" />
     </Canvas>
 </Window>
